@@ -64,6 +64,8 @@ django-browserid==1.0.1 \
     --hash=sha256:d1b40982f65287ea8b278625b0e32aedfbeeee834c0cd64e09f0f0d8b6273541
 #https://github.com/mozilla/rna/archive/113593bff34d23f84c9bf0de648817c3f3502750.tar.gz#egg=rna==1.1 \
 #    --hash=sha256:d3ff8a304f00651f72be56ffaa93a40743925c94dbce5f599d91c9259e86836f
+https://github.com/pmclanahan/rna/archive/django-1.8-drf-upgrade.tar.gz#egg=rna==1.1 \
+    --hash=sha256:6f877a988dca09dcb5ae16e8f3afd429129d93b06ce748c0ce25a1f94f85b4b1
 django-pagedown==0.1.1 \
     --hash=sha256:898df5457d480c37ccd85c5211bdcf1bb75191d4c6b351db9eba8148458ea50e
 djangorestframework==3.3.2 \
