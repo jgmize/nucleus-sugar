@@ -1,5 +1,5 @@
 #!/bin/sh
 
-venv/bin/urlwait
+urlwait
 ./bin/run-common.sh
-venv/bin/python manage.py runserver 0.0.0.0:8000
+./manage.py runserver 0.0.0.0:8000
