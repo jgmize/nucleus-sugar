@@ -17,7 +17,7 @@ COPY bin/pipstrap.py bin/pipstrap.py
 RUN bin/pipstrap.py
 
 COPY requirements.txt /app/requirements.txt
-RUN pip install --require-hashes --no-cache-dir -r requirements.txt
+RUN pip install --ignore-installed --require-hashes --no-cache-dir -r requirements.txt
 
 COPY . /app
 RUN DEBUG=False SECRET_KEY=foo ALLOWED_HOSTS=localhost, DATABASE_URL= ./manage.py collectstatic --noinput -c
