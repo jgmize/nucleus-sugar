@@ -6,14 +6,11 @@ CMD ["./bin/run-prod.sh"]
 RUN adduser --uid 1000 --disabled-password --gecos '' --no-create-home webdev
 
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends build-essential python python-dev python-pip python-virtualenv \
-                                               virtualenv libpq-dev postgresql-client gettext && \
+    apt-get install -y --no-install-recommends build-essential python python-dev python-pip  \
+                                               libpq-dev postgresql-client gettext && \
     rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
-
-RUN virtualenv venv
-ENV PATH /app/venv/bin:$PATH
 
 # Get pip 8
 COPY bin/pipstrap.py bin/pipstrap.py
